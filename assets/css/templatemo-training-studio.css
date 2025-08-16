@@ -600,6 +600,10 @@ banner
 
 .main-banner {
   position: relative;
+  background-image: url(../images/slide-01.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 #bg-video {
@@ -620,7 +624,7 @@ banner
     background-color: rgba(35,45,57,0.8);
     top: 0;
     left: 0;
-    bottom: 7px;
+    bottom: 0px;
     width: 100%;
 }
 
