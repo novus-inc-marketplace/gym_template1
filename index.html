@@ -67,9 +67,7 @@
 
     <!-- ***** Main Banner Area Start ***** -->
     <div class="main-banner" id="top">
-        <video muted loop id="bg-video" poster="assets/images/slide-01.jpg" preload="metadata">
-            <source src="assets/images/gym-video.mp4" type="video/mp4" />
-        </video>
+        <!-- The video element and its source are removed -->
 
         <div class="video-overlay header-text">
             <div class="caption">
@@ -465,21 +463,6 @@
     
     <!-- Global Init -->
     <script src="assets/js/custom.js" defer></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var video = document.getElementById('bg-video');
-            if (video) {
-                // Attempt to play video after a short delay to allow other content to load
-                setTimeout(function() {
-                    video.play().catch(error => {
-                        console.log('Video autoplay prevented:', error);
-                        // Optionally, show a play button or a message to the user
-                    });
-                }, 100);
-            }
-        });
-    </script>
 
   </body>
 </html>
